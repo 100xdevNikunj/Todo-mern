@@ -1,10 +1,13 @@
 const express = require('express');
 const { creatTodo, updateTodo } = require('./type');
 const { todo } = require('./db');
+const cors = require("cors");
+
 
 const app = express();
 
 app.use(express.json())
+app.use(cors())
 
 app.post("/todo", async (req, res)=>{
     const creatPayload = req.body;
