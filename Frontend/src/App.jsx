@@ -30,6 +30,14 @@ function App() {
     return <p>Loading...</p>; // Show a loading indicator while fetching data
   }
 
+  //  useEffect(() => {
+  //   fetch("https://sum-server.100xdevs.com/todo?id=" + id)
+  //     .then(async function(res) {
+  //       const json = await res.json();
+  //       setTodo (json.todo);
+  //     })
+  // }, [id])
+  
   return (
     <>
       <InputComponent />
